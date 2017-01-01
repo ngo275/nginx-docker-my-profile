@@ -39,7 +39,9 @@
 		    		<li class = "icon"><img class = "qiitapicks" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/qiitapicksicon.png"></li>
 		    	</ul>
 	    	</div>
-	    	% <div class = "element"></div>
+	    	% <div class = "element"></div><br>
+	    	<span class = "prefix">%</span>
+	    	<span class = "next"><span>
     	</div>
     </div>
 </body>
@@ -107,8 +109,17 @@
 		});
 
     	$(".element").typed({
-        	strings: ["Hi!", "My name is Shuichi Nagao.", "I'm a student at the University of Tokyo.", "And also, I'm working at Candle inc. as an iOS developer.", "Now I live in a hostel at Asakusa that hosts many foreigners.", "If I find challages that attract me, I will surely do. Keep looking. Don't settle."],
-        	typeSpeed: 0
+        	strings: ["Hi!", "My name is Shuichi Nagao."],
+        	typeSpeed: 0,
+        	callback: function() {
+        		$(".prefix").css('display', 'inline');
+        		$(".typed-cursor").css('display', 'none');
+        		$(".next").typed({
+        			startDelay:2000,
+        			strings: ["I'm a student at the University of Tokyo.", "And also, I'm working at Candle inc. as an iOS developer.", "Now I live in a hostel at Asakusa that hosts many foreigners.", "If I find challages that attract me, I will surely do.", "Keep looking. Don't settle."],
+        			typeSpeed: 0
+        		});
+        	}
       	});
   	});
 </script>
