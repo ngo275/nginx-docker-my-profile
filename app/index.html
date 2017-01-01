@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ngo275</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/typed.js"></script>
+</head>
+<body>
+    <h1 style = "text-align: center;">Shuichi Nagao</h1>
+    <img class = "profile" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/myprofile.JPG">
+    <div class = "sns">
+    	<ul class = "icons">
+    		<li class = "icon"><img class = "fb" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/fbicon.png"></li>
+    		<li class = "icon"><img class = "github" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/giticon.png"></li>
+    		<li class = "icon"><img class = "blog" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/ngoblogicon.png"></li>
+    		<li class = "icon"><img class = "qiita" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/qiitaicon.png"></li>
+    		<li class = "icon"><img class = "qiitapicks" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/qiitapicksicon.png"></li>
+    	</ul>
+    </div>
+    <div class = "terminal">
+    	<div class = "text-title">
+    		<span class = "title-bar">ngo275 - bash</span>
+    	</div>
+    	<div class = "text-body">
+	    	$ <div class = "element"></div>
+    	</div>
+    </div>
+</body>
+</html>
+
+<script>
+	$(function(){
+		//$("li.icon").on('hover', function(){
+		//	console.log($(this));
+		//});
+		$('li.icon img').hover(function(){
+    		$(this).fadeTo('fast',.3);
+		},function(){
+    		$(this).fadeTo('fast',1);
+		});
+
+		$(".fb").on('click',function(){
+ 		    //console.log("fb");
+ 		    window.open('https://www.facebook.com/shuichi.nagao', '_blank');
+		});
+
+		$(".github").on('click',function(){
+ 		    //console.log("github");
+ 		    window.open('https://github.com/ngo275', '_blank');
+		});
+
+		$(".blog").on('click',function(){
+ 		    //console.log("blog");
+ 		    window.open('https://life.shuichi.tech', '_blank');
+		});
+
+		$(".qiita").on('click',function(){
+ 		    //console.log("qiita");
+ 		    window.open('http://qiita.com/ngo275', '_blank');
+		});
+
+		$(".qiitapicks").on('click',function(){
+ 		    //console.log("qiitapicks");
+ 		    window.open('https://itunes.apple.com/jp/app/qiitapicks/id1181929918?l=en&mt=8', '_blank');
+		});
+
+    	$(".element").typed({
+        	strings: ["Hi!", "My name is Shuichi Nagao.", "I'm a student at the University of Tokyo.", "I'm working at Candle inc. as an iOS developer."],
+        	typeSpeed: 0
+      	});
+  	});
+</script>
