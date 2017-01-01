@@ -9,33 +9,34 @@
 </head>
 <body>
     <h1 style = "text-align: center;">Shuichi Nagao</h1>
-    <div class = "profile">
-	    <img class = "profile" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/myprofile.JPG">
-	    <div class = "sns">socials
-	    	<ul class = "icons">
-	    		<li class = "icon"><img class = "fb" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/fbicon.png"></li>
-	    		<li class = "icon"><img class = "github" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/giticon.png"></li>
-	    		<li class = "icon"><img class = "blog" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/ngoblogicon.png"></li>
-	    		<li class = "icon"><img class = "qiita" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/qiitaicon.png"></li>
-	    	</ul>
-	    </div>
-	    <div class = "works">works
-	    	<ul class = "icons">
-	    		<li class = "icon"><img class = "mimi" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/mimiicon.png"></li>
-	    		<li class = "icon"><img class = "marble" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/marbleicon.jpg"></li>
-	    	</ul>
-	    </div>
-	    <div class = "hobbies">hobbies
-	    	<ul class = "icons">
-	    		<li class = "icon"><img class = "qiitapicks" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/qiitapicksicon.png"></li>
-	    	</ul>
-	    </div>
-	</div>
     <div class = "terminal">
     	<div class = "text-title">
     		<span class = "title-bar">ngo275 - zsh</span>
     	</div>
     	<div class = "text-body">
+    		% ls socials<br>
+    		<div class = "sns">
+		    	<ul class = "icons">
+		    		<li class = "icon"><img class = "fb" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/fbicon.png"></li>
+		    		<li class = "icon"><img class = "github" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/giticon.png"></li>
+		    		<li class = "icon"><img class = "qiita" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/qiitaicon.png"></li>
+		    		<li class = "icon"><img class = "linkedin" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/linkedinicon.png"></li>
+		    	</ul>
+		    </div>
+		    % ls works<br>
+		    <div class = "works">
+		    	<ul class = "icons">
+		    		<li class = "icon"><img class = "mimi" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/mimiicon.png"></li>
+		    		<li class = "icon"><img class = "marble" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/marbleicon.jpg"></li>
+		    	</ul>
+		    </div>
+		    % ls about_me<br>
+		    <div class = "hobbies">
+		    	<ul class = "icons">
+		    		<li class = "icon"><img class = "blog" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/myprofile.JPG"></li>
+		    		<li class = "icon"><img class = "qiitapicks" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/qiitapicksicon.png"></li>
+		    	</ul>
+	    	</div>
 	    	% <div class = "element"></div>
     	</div>
     </div>
@@ -71,6 +72,11 @@
 		$(".qiita").on('click',function(){
  		    //console.log("qiita");
  		    window.open('http://qiita.com/ngo275', '_blank');
+		});
+
+		$(".linkedin").on('click',function(){
+ 		    //console.log("qiita");
+ 		    window.open('https://www.linkedin.com/in/shuichi-nagao-23920611b?trk=nav_responsive_tab_profile', '_blank');
 		});
 
 		$(".mimi").on('click',function(){
