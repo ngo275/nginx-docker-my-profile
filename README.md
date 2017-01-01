@@ -18,6 +18,6 @@ This is a simple application that integrates some websites. Please visit [my web
 
 If you want to use this at background, please add `-d` into this command.
 
-Instead of 4 and 5, following commands will work. This uses my docker image that is stored at my docker hub account(@ngo275).
+Instead of 4 and 5, a following command will work. This uses my docker image that is stored at my docker hub account(@ngo275).
 
 `docker run -p 80:80 --rm -v /path/to/profile/app/:/app/ ngo275/nginx`
