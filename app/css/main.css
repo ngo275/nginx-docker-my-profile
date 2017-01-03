@@ -1,106 +1,111 @@
 body { background-color: #e0e0e0; }
+
 p { color: #808080; }
+
 h1 {
-	font-size: 2.5em;
-	font-family: "Lucida Grande", sans-serif;
-	text-align: center;
-	color: #666;
+    font-size: 2.5em;
+    font-family: "Lucida Grande", sans-serif;
+    text-align: center;
+    color: #666;
     text-shadow: #fff 0px 2px 4px;
 }
+
 div {
-	display: block;
+    display: block;
 }
 
 img.profile {
-	display: inline;
-	margin: 20px 0px 0px 0px; 
-	width: 50px; 
-	height: 50px;
+    display: inline;
+    margin: 20px 0px 0px 0px; 
+    width: 50px; 
+    height: 50px;
 }
 
 ul.icons {
-	margin: 8px auto;
-	height: 54px;
-	padding: 0px;
+    margin: 8px auto;
+    height: 54px;
+    padding: 0px;
 }
 
 li.icon {
-	display: inline-block;
+    display: inline-block;
 }
 
 li.icon > img {
-	width: 50px;
-	height: 50px;
-	border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
 }
 
 div.terminal {
-	display: block;
-	margin-left: auto; 
-	margin-right: auto;
-	width: 900px;
-	border-radius: 10px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 900px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px; 
 }
 
 .title-bar {
-	display: block;
-	padding: 5px 0;
-	font-family: "Lucida Grande", sans-serif;
-	font-size: 0.75em;
-	text-align: center;
-	text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
-	background-color: #f8f8f8;
-	background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
-	box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
-	border-bottom: #6a6a6a 1px solid;
+    display: block;
+    padding: 5px 0;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
+    background-color: #f8f8f8;
+    background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+    box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+    border-bottom: #6a6a6a 1px solid;
 }
 
 .text-body {
-	height: 400px;
-	background-color: rgba(0, 0, 0, 0.85);
-	padding: 10px;
-	color: #f0f0f0;
-	text-shadow: #000 0px 1px 0px;
-	font-family: "Consolas", "Courier New", "Courier";
-	font-size: 1.55em;
-	line-height: 1.40em;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px;
+    color: #f0f0f0;
+    text-shadow: #000 0px 1px 0px;
+    font-family: "Consolas", "Courier New", "Courier";
+    font-size: 1.55em;
+    line-height: 1.40em;
     font-weight: 400;
     text-align: left;
     overflow: hidden;
     transition: all 1.0s ease-out;
-    margin: 0;
-
+    margin: 0px;
 }
 
 .element {
-	/*text-align: center;*/
-	/*font-size: 22px;*/
-	font-family: "Consolas", "Courier New", "Courier";
-	display: inline;
+     /*text-align: center;*/
+     /*font-size: 22px;*/
+     font-family: "Consolas", "Courier New", "Courier";
+     display: inline;
 }
 
 .prefix {
-	display: none;
+     display: none;
 }
 
 .typed-cursor {
-	font-size: 1.0em;
+    font-size: 1.0em;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
 @-webkit-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
 @-moz-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
