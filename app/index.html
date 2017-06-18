@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1 style = "text-align: center;">Shuichi Nagao (永尾修一)</h1>
-    <p style="display: none">東大16卒。現在は株式会社CandleとAnyPay株式会社両方で働いています。身分は大学院生なのでまだ正社員ではありません。</p>
+    <p style="display: none">東大16卒。学部時代はラクロス部に所属し、部活に浸った4年間を過ごす。大学4年の部活引退後にCandleにエンジニアとしてジョイン。大学卒業後、大学院に進学するも、やりたいことを求めて休学する。プログラミングにハマってインターンをしたり、浅草のホステルに住み込みで働いたり、mercariのBOLD INTERNSHIP in USAにも参加した。そして大学院を退学し、AnyPayの正社員となる。現在はペイモというアプリの開発をしている。</p>
     <div class = "terminal">
     	<div class = "text-title">
             <span class = "title-bar">ngo275 - zsh</span>
@@ -31,6 +31,8 @@
 	    % ls works<br>
 	    <div class = "works">
 		<ul class = "icons">
+		    <li class = "icon"><img class = "paymo" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/paymo.jpg"></li>
+		    <li class = "icon"><img class = "anypay" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/anypay.jpg"></li>
 		    <li class = "icon"><img class = "mimi" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/mimiicon.png"></li>
 		    <li class = "icon"><img class = "marble" src = "https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Pic/marbleicon.jpg"></li>
 		</ul>
@@ -62,64 +64,62 @@
 	});
 
 	$(".fb").on('click',function(){
- 	    //console.log("fb");
  	    window.open('https://www.facebook.com/shuichi.nagao', '_blank');
 	});
 
 	$(".twitter").on('click',function(){
-		    //console.log("fb");
  	    window.open('https://twitter.com/NGO275', '_blank');
 	});
 
 	$(".github").on('click',function(){
- 		    //console.log("github");
  	    window.open('https://github.com/ngo275', '_blank');
 	});
 
 	$(".blog").on('click',function(){
- 		    //console.log("blog");
 	    window.open('http://ngo275.hatenablog.com/', '_blank');
 	});
 
 	$(".wantedly").on('click',function(){
- 		    //console.log("qiita");
 	    window.open('https://www.wantedly.com/users/18291545', '_blank');
 	});
 
 	$(".qiita").on('click',function(){
-	    //console.log("qiita");
  	    window.open('http://qiita.com/ngo275', '_blank');
 	});
 
 	$(".linkedin").on('click',function(){
- 	    //console.log("qiita");
  	    window.open('https://www.linkedin.com/in/shuichi-nagao-23920611b', '_blank');
 	});
 
+	$(".paymo").on('click',function(){
+ 	    window.open('https://itunes.apple.com/jp/app/%E3%82%8F%E3%82%8A%E3%81%8B%E3%82%93%E3%82%A2%E3%83%97%E3%83%AA-%E3%83%9A%E3%82%A4%E3%83%A2-paymo-%E3%82%AF%E3%83%AC%E3%82%AB%E3%81%A8%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88%E3%81%A7%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E5%89%B2%E3%82%8A%E5%8B%98/id1183339957?mt=8', '_blank');
+	});
+
+	$(".anypay").on('click',function(){
+ 	    window.open('https://anypay.jp', '_blank');
+	});
+
 	$(".mimi").on('click',function(){
- 	    //console.log("qiita");
  	    window.open('https://itunes.apple.com/jp/app/mimitv-ke-aikunaritai-nuno/id1128675519?l=en&mt=8', '_blank');
 	});
 
 	$(".marble").on('click',function(){
- 	    //console.log("qiita");
  	    window.open('https://itunes.apple.com/us/app/marble-maburu-nu-xingnofasshonmedia/id1126627442?mt=8', '_blank');
 	});
 
 	$(".qiitapicks").on('click',function(){
- 	    //console.log("qiitapicks");
  	    window.open('https://itunes.apple.com/jp/app/qiitapicks/id1181929918?l=en&mt=8', '_blank');
 	});
 
     	$(".element").typed({
-       	    strings: ["Hi!", "My name is Shuichi Nagao."],
+       	    strings: ["Hi!", "I'm Shuichi Nagao, a software engineer at AnyPay Inc."],
             typeSpeed: 0,
             callback: function() {
         	$(".prefix").css('display', 'inline');
         	$(".typed-cursor").css('display', 'none');
         	$(".next").typed({
            	    startDelay:2000,
-        	    strings: ["I'm a student at the University of Tokyo.", "And also, I'm working at Candle inc. as an iOS developer.", "Now I live in a hostel at Asakusa that hosts many foreigners.", "If I find a challange that attracts me, I will surely do it.", "Keep looking. Don't settle."],
+        	    strings: ["I code Swift and Ruby to make paymo that is our product.", "In December, 2015, I got into programming, and started working at Candle Inc as an enginner.", "I have worked at AnyPay Inc since April, 2017.", "Now, I'm strongly intereted in FinTech, such as money transfer and blockchain.", "Keep looking. Don't settle."],
            	    typeSpeed: 0
         	});
             }
