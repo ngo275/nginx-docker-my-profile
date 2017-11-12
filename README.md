@@ -8,18 +8,8 @@ This is a simple application that integrates some websites. Please visit [my web
 
 ## Usage
 
-1, `Install docker`
+- `docker build -t nginx-app .`
 
-2, `git clone https://github.com/ngo275/nginx-docker-my-profile.git /path/to/profile`
+- `docker run -p 80:80 --rm -v /path/to/profile/app/:/app/ nginx-app`
 
-3, `cd /path/to/profile`
-
-4, `docker build -t nginx-app .`
-
-5, `docker run -p 80:80 --rm -v /path/to/profile/app/:/app/ nginx-app`
-
-If you want to run this server at background, please add `-d` into this command.
-
-Instead of 4 and 5, a following command will work. This uses my docker image that is stored at my docker hub account(@ngo275).
-
-`docker run -p 80:80 --rm -v /path/to/profile/app/:/app/ ngo275/nginx`
+or `docker run -p 80:80 --rm -v /path/to/profile/app/:/app/ ngo275/nginx`
