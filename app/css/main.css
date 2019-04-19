@@ -37,6 +37,13 @@ li.icon > img {
     border-radius: 10px;
 }
 
+img.pandai {
+    background-color: white;
+}
+img.nomady {
+    object-fit: none;
+}
+
 div.terminal {
     display: block;
     margin-left: auto; 
