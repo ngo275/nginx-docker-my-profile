@@ -1,12 +1,20 @@
-# nginx-docker-my-profile
+# Profile
 
 ## Overview
 
-This is a simple application that integrates some websites. Please visit [my website](https://shuichi.tech)!
+This is a simple profile web app. Please visit [my website](https://shuichi.tech)!
 
 ![profile](https://s3-ap-northeast-1.amazonaws.com/ngo275.asset/Gif/profile.gif)
 
 ## Usage
+
+### With Serve
+
+```shell script
+serve ./ -s
+```
+
+### With Docker
 
 - `docker build -t nginx-app .`
 
